@@ -1,0 +1,388 @@
+:root {
+    --c-brand: #2E2F42; 
+    --color-primary: #434455;
+    --color-primary-light: #FFF;
+    --logo-color: #4D5AE5;
+    --c-active: #404BBF;
+    --c-light: #F4F4FD;
+    --c-border: #E7E9FC;
+
+}
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+    }
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+button{
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*.section {
+    padding: 120px 0;
+}
+*/
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+
+
+/*header*/
+
+.header {
+    border-bottom: 1px solid var(--c-border); 
+    padding: 0 15px 0 15px;
+}
+
+.logo {
+    color: var(--logo-color);
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.logo-accent {
+    color: var(--c-brand);
+    text-transform: uppercase;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 24px 0;
+    color: var(--c-brand);  
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 40px;
+}
+
+.address-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-address {
+    display: flex;
+    gap: 40px;
+}
+
+
+.nav-link:active,  
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--c-active);
+    text-decoration: underline;
+}
+
+.address {
+    font-style: normal; 
+}
+
+
+.address-link {
+    color: var(--color-primary);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.address-link:active, 
+.address-link:hover,
+.address-link:focus {
+    color: var(--c-active);
+}
+
+/*hero-section*/
+
+
+.hero-section {
+    background-color: var(--c-brand);
+    padding: 188px 0;
+}
+
+.hero-button {
+    color: var(--color-primary-light);
+    background-color: var(--logo-color);
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    min-width: 169px;
+    height: 56px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--c-active);    
+}
+
+
+
+
+.hero-title {
+    color: var(--color-primary-light);
+    background-color: var(--color-brand);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+}
+
+
+/*advantage section*/
+
+.advantages-section {
+    background-color: var(--color-primary-light);
+    padding: 120px 0;
+}
+
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+
+.advantage-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.advantages-title {
+    color: var(--c-brand);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.advantage-text {
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+}
+
+/*team and portfolio section*/
+
+.team-title,
+.portfolio-title {
+    color: var(--c-brand);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.name-title,
+.work-title {
+    color: var(--c-brand);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    margin-bottom: 8px;
+}
+
+.team-text,
+.portfolio-text {
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+}
+
+/*our team*/
+.team-section {
+    background-color: var(--c-light);
+    padding: 120px 0;
+}
+
+.text-team-bgc {
+    background-color: #FFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-items{
+    padding: 32px 0;
+    
+}
+
+
+.name-title {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-text {
+    text-align: center;
+}
+
+/*portfolio*/
+.portfolio-section {
+    background-color: var(--color-primary-light);
+    padding: 120px 0;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.portfolio-item {
+    background: var(--color-primary-light);
+    width: calc((100% - 48px) / 3);
+}
+
+.p-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-bottom: 8px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc; 
+    border-top: none;
+    
+
+}
+
+/*footer*/
+
+.footer{
+    background-color: var(--c-brand);
+}
+
+.footer-logo{
+    color: var(--logo-color);
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+
+}
+
+.f-logo-accent {
+    color: #F4F4FD;
+    text-transform: uppercase;
+
+}
+.footer-text {
+    color: var(--c-light);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+
+.footer {
+    padding: 100px 0;
+}
+
+
