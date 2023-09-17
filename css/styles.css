@@ -6,6 +6,8 @@
     --c-active: #404BBF;
     --c-light: #F4F4FD;
     --c-border: #E7E9FC;
+    --c-green: #31D0AA;
+
 
 }
 
@@ -139,6 +141,7 @@ img {
     text-decoration: underline;
 }
 
+
 .address {
     font-style: normal; 
 }
@@ -164,6 +167,10 @@ img {
 .hero-section {
     background-color: var(--c-brand);
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(./images/background/people-office.jpg);
+   /* background: #2E2F42B2;*/
+
 }
 
 .hero-button {
@@ -177,9 +184,10 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    display: block;
     align-items: center;
     justify-content: center;
+    display: block;
+    margin: auto;
     margin-top: 48px;
     min-width: 169px;
     height: 56px;
@@ -293,6 +301,10 @@ img {
     background-color: #FFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+
 }
 
 .team-list {
@@ -307,6 +319,25 @@ img {
     
 }
 
+.icon-sm {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    gap: 24px;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sm-link {
+    fill: var(--c-light);
+}
+
+.icon-sm:hover {
+    background-color: var(--c-active);
+}
 
 .name-title {
     margin-bottom: 8px;
@@ -336,12 +367,18 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item:hover {
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+
+}
+
 .p-title-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    margin-bottom: 8px;
     padding: 32px 16px;
     border: 1px solid #e7e9fc; 
     border-top: none;
@@ -353,6 +390,11 @@ img {
 
 .footer{
     background-color: var(--c-brand);
+}
+
+.footer-con {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-logo{
@@ -381,8 +423,45 @@ img {
     max-width: 264px;
 }
 
+
+.sm-f-list {
+    display: flex;
+    gap: 16px;
+}
+
+.icon-sm-f {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+
+.icon-sm-f:hover {
+    background-color: var(--c-green);
+}
+
+.sm-f-link {
+    fill: var(--c-light);
+}
+
+.footer-title-sm {
+    color: var(--color-primary-light);
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2; 
+    letter-spacing: 0.02em;
+}
+
 .footer {
     padding: 100px 0;
+    align-items: center;
 }
 
 
