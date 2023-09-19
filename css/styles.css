@@ -98,7 +98,7 @@ img {
     color: var(--c-active);
 }
 
-.nav-link.active:hover::after {
+.nav-link.active::after {
     position: absolute;
     color: var(--c-active);
     content: "";
