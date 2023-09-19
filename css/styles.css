@@ -224,7 +224,7 @@ img {
     min-width: 169px;
     height: 56px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
 .hero-button:hover,
 .hero-button:focus {
@@ -371,7 +371,6 @@ img {
 .icon-sm {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-item-team {
@@ -387,6 +386,8 @@ img {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .sm-link:hover,
