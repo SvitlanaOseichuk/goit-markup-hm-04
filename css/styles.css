@@ -224,7 +224,7 @@ img {
     min-width: 169px;
     height: 56px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+}
 
 .hero-button:hover,
 .hero-button:focus {
@@ -407,6 +407,7 @@ img {
 }
 
 /*portfolio*/
+
 .portfolio-section {
     background-color: var(--color-primary-light);
     padding: 120px 0;
@@ -429,7 +430,7 @@ img {
 
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-   
+    transform: translateY(0%);
 }
 
 .p-title-text {
@@ -448,11 +449,11 @@ img {
 }
 
 
-.overlay-image:hover .overlay-text {
+.overlay-image:hover .overlay {
     transform: translateY(0%);
 }
 
-.overlay-text {
+.overlay {
     color: var(--c-light);
     font-size: 16px;
     line-height:1.5;
