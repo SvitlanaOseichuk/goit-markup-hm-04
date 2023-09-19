@@ -8,6 +8,7 @@
     --c-border: #E7E9FC;
     --c-green: #31D0AA;
     --c-border: #8E8F99;
+    --c-window:  #FCFCFC;
 
 }
 
@@ -221,7 +222,7 @@ img {
     margin-top: 48px;
     min-width: 169px;
     height: 56px;
-    transition: background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -563,3 +564,29 @@ img {
 }
 
 
+/* START modal*/
+/*
+.backdrop {
+    background: rgba(46, 47, 66, 0.40);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}
+
+.modal {
+    position: relative;
+    width: 408px;
+    height: 584px;
+    background-color: var(--c-window);
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}*/
+
+/* END modal*/ 
