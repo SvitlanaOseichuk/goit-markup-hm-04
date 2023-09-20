@@ -223,6 +223,7 @@ img {
     min-width: 169px;
     height: 56px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .hero-button:hover,
@@ -575,18 +576,23 @@ img {
     inset: 0;
 }
 
+.is-hidden {
+    display: none;
+}
+
 .modal {
     position: relative;
     width: 408px;
     height: 584px;
     background-color: var(--c-window);
     border-radius: 4px;
+    padding: 24px;
 }
 
 .modal-close {
     position: absolute;
     top: 24px;
     right: 24px;
-}*/
-
+}
+*/
 /* END modal*/ 
